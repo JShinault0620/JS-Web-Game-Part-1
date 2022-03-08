@@ -21,15 +21,19 @@ const createImage = (name, left, bottom, src, character = false) => {
             switch (event.key) {
                 case 'w':
                     newImage.style.bottom = moveElement(newImage.style.bottom, 25)
+                    newImage.src = 'assets/green-character/north.gif'
                     break;
                 case 'a':
                     newImage.style.left = moveElement(newImage.style.left, 25, true)
+                    newImage.src = 'assets/green-character/west.gif'
                     break;
                 case 's':
                     newImage.style.bottom = moveElement(newImage.style.bottom, 25, true)
+                    newImage.src = 'assets/green-character/south.gif'
                     break;
                 case 'd':
                     newImage.style.left = moveElement(newImage.style.left, 25)
+                    newImage.src = 'assets/green-character/east.gif'
                     break;
             }
         })
